@@ -1,0 +1,97 @@
+git rm -r --cached .
+git add .
+git commit -m "Clean up project with .gitignore"
+```**Внимание:** Эти команды не удалят файлы с вашего компьютера, а только уберут их из-под отслеживания Git.
+
+---
+
+### Файл `.gitignore` для Unity
+
+```gitignore
+# =============== #
+# Unity Generated #
+# =============== #
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+
+# ===================================== #
+# Visual Studio / Rider / VS Code files #
+# ===================================== #
+.vs/
+.vscode/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ======================= #
+# Rider Generated Folders #
+# ======================= #
+.idea/
+
+# ================================== #
+# Unity3D generated meta files #
+# ================================== #
+# Комментарий: Раскомментируйте, если вы НЕ используете .meta файлы для отслеживания версий.
+# Это НЕ рекомендуется для командной работы.
+# *.meta
+
+# ======================================== #
+# Unity3D Generated Embedded Packages info #
+# ======================================== #
+/Packages/*/.unitypackage
+/Packages/manifest.json
+/Packages/packages-lock.json
+
+# ============================ #
+# OS generated files           #
+# ============================ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ======================================== #
+# Asset Store Package Downloads          #
+# ======================================== #
+*.unitypackage
+
+# ============================ #
+# Build files                  #
+# ============================ #
+*.apk
+*.aab
+*.app
+*.exe
+*.ipa
+*.pkg
+*.jar
+
+# ============================ #
+# Gradle generated files       #
+# ============================ #
+.gradle/
+build/
